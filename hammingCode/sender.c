@@ -39,7 +39,7 @@ int addIndividual(char ext[], int pos){
 
 	for (i=0; i<extendedLen; i++){ 
 		
-		if ((ceil(log2(i+1))!=floor(log2(i+1))) && (table[i+1][pos])) {  
+		if ((ceil(log2(i+1))!=floor(log2(i+1))) && (table[i+1][log2(pos+1)])) {  
 		    if (ext[i] == '1')
                 count++;    
 		}   
